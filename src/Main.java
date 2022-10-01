@@ -23,16 +23,16 @@ public class Main {
         }
     }
 
-    public static void chooseDistributionKit(int a, String s) {
+    public static void chooseDistributionKit(int year, String clientOS) {
         int currentYear = LocalDate.now().getYear();
-        if (s.equalsIgnoreCase("android")) {
-            if (a < currentYear) {
+        if (clientOS.equalsIgnoreCase("android")) {
+            if (year < currentYear) {
                 System.out.println("Установите версию приложения для Android по ссылке");
             } else {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
             }
-        } else if (s.equalsIgnoreCase("ios")) {
-            if (a < currentYear) {
+        } else if (clientOS.equalsIgnoreCase("ios")) {
+            if (year < currentYear) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             } else {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
